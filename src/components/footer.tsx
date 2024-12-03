@@ -25,6 +25,9 @@ export function Footer() {
                   variant="small"
                   color="white"
                   className="font-normal !text-gray-700 hover:!text-gray-900 transition-colors"
+                  placeholder=""
+                  onPointerEnterCapture={() => {}}
+                  onPointerLeaveCapture={() => {}}
                 >
                   {link}
                 </Typography>
@@ -32,10 +35,24 @@ export function Footer() {
             ))}
           </ul>
           <div className="flex w-fit justify-center gap-2">
-            <IconButton size="sm" color="gray" variant="text">
+            <IconButton
+              size="sm"
+              color="gray"
+              variant="text"
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+            >
               <i className="fa-brands fa-instagram text-lg" />
             </IconButton>
-            <IconButton size="sm" color="gray" variant="text">
+            <IconButton
+              size="sm"
+              color="gray"
+              variant="text"
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+            >
               <i className="fa-brands fa-github text-lg" />
             </IconButton>
           </div>
@@ -43,6 +60,9 @@ export function Footer() {
         <Typography
           color="blue-gray"
           className="text-center mt-12 font-normal !text-gray-700"
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
         >
           &copy; {CURRENT_YEAR} Created by Kateryna Nekhaienko. All Rights
           Reserved.

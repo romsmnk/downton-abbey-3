@@ -1,7 +1,7 @@
 "use client";
 
 import BlogPostCard from "@/components/blog-post-card";
-import { Tab, Tabs, TabsHeader, Typography } from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
 
 const POSTS = [
   {
@@ -27,9 +27,9 @@ const POSTS = [
 export function Posts() {
   return (
     <section className="grid min-h-screen place-items-center p-8">
-      <Tabs value="trends" className="mx-auto max-w-7xl w-full mb-16 ">
+      {/* <Tabs value="trends" className="mx-auto max-w-7xl w-full mb-16 ">
         <div className="w-full flex mb-8 flex-col items-center">
-          <TabsHeader className="h-10 !w-12/12 md:w-[50rem] border border-white/25 bg-opacity-90">
+          <TabsHeader className="h-10 !w-12/12 md:w-[50rem] border border-white/25 bg-opacity-90" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
             <Tab value="trends">Trends</Tab>
             <Tab value="frontend">Frontend</Tab>
             <Tab value="backend">Backend</Tab>
@@ -38,8 +38,14 @@ export function Posts() {
             <Tab value="tools">Tools</Tab>
           </TabsHeader>
         </div>
-      </Tabs>
-      <Typography variant="h1" className="mb-2">
+      </Tabs> */}
+      <Typography
+        variant="h1"
+        className="mb-2"
+        placeholder=""
+        onPointerEnterCapture={() => {}}
+        onPointerLeaveCapture={() => {}}
+      >
         Who will find this website useful?
       </Typography>
       {/* <Typography

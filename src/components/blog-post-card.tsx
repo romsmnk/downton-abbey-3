@@ -15,8 +15,18 @@ interface BlogPostCardProps {
 
 export function BlogPostCard({ img, tag, title, desc }: BlogPostCardProps) {
   return (
-    <Card shadow={true}>
-      <CardHeader className="justify-center rounded-lg self-center flex align-middle">
+    <Card
+      shadow={true}
+      placeholder=""
+      onPointerEnterCapture={() => {}}
+      onPointerLeaveCapture={() => {}}
+    >
+      <CardHeader
+        className="justify-center rounded-lg self-center flex align-middle"
+        placeholder=""
+        onPointerEnterCapture={() => {}}
+        onPointerLeaveCapture={() => {}}
+      >
         <Image
           width={100}
           height={100}
@@ -25,11 +35,26 @@ export function BlogPostCard({ img, tag, title, desc }: BlogPostCardProps) {
           className="justify-center rounded-lg self-center flex align-middle"
         />
       </CardHeader>
-      <CardBody className="p-6">
-        <Typography variant="small" color="blue" className="mb-2 !font-medium">
+      <CardBody
+        className="p-6"
+        placeholder=""
+        onPointerEnterCapture={() => {}}
+        onPointerLeaveCapture={() => {}}
+      >
+        <Typography
+          variant="small"
+          color="blue"
+          className="mb-2 !font-medium"
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+        >
           {tag}
         </Typography>
         <Typography
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
           as="a"
           href="#"
           variant="h5"
@@ -38,7 +63,12 @@ export function BlogPostCard({ img, tag, title, desc }: BlogPostCardProps) {
         >
           {title}
         </Typography>
-        <Typography className="mb-6 font-normal !text-gray-500">
+        <Typography
+          className="mb-6 font-normal !text-gray-500"
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+        >
           {desc}
         </Typography>
       </CardBody>

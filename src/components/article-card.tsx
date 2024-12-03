@@ -12,6 +12,9 @@ export function ArticleCard({ img, title, desc }: ArticleCardProps) {
     <Card
       className="relative grid min-h-[30rem] items-end overflow-hidden rounded-xl"
       color="transparent"
+      placeholder=""
+      onPointerEnterCapture={() => {}}
+      onPointerLeaveCapture={() => {}}
     >
       <Image
         width={768}
@@ -21,11 +24,25 @@ export function ArticleCard({ img, title, desc }: ArticleCardProps) {
         className="absolute inset-0 h-full w-full"
       />
       <div className="absolute inset-0 bg-black/60" />
-      <CardBody className="relative flex flex-col justify-end text-right">
-        <Typography variant="h4" color="white">
+      <CardBody
+        className="relative flex flex-col justify-end text-right"
+        placeholder=""
+        onPointerEnterCapture={() => {}}
+        onPointerLeaveCapture={() => {}}
+      >
+        <Typography
+          variant="h4"
+          color="white"
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+        >
           {title}
         </Typography>
         <Typography
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
           variant="paragraph"
           color="white"
           className="my-2 font-normal text-right"
